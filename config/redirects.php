@@ -28,6 +28,6 @@ return [
     | - or you could even use your own class as a direct implementation
     |
     */
-    'redirect_model' => \Neurony\Redirects\Models\Redirect::class,
+    'redirect_model' => \ApexMuse\Redirects\Models\Redirect::class,
 
 ];

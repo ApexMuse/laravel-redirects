@@ -1,5 +1,6 @@
 {
     "name": "apexmuse/laravel-redirects",
+    "version": "2.0.1",
     "description": "Nested URLs redirect logic for Laravel",
     "license": "MIT",
     "keywords": [
@@ -18,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.2",
         "illuminate/contracts": "^7.0",
         "illuminate/support": "^7.0",
         "illuminate/database": "^7.0"
