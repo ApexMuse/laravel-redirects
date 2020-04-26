@@ -1,8 +1,8 @@
 # Nested redirects for Laravel
 
-[![Build Status](https://travis-ci.org/Neurony/laravel-redirects.svg?branch=master)](https://travis-ci.org/Neurony/laravel-redirects)
+[![Build Status](https://travis-ci.org/ApexMuse/laravel-redirects.svg?branch=master)](https://travis-ci.org/ApexMuse/laravel-redirects)
 [![StyleCI](https://github.styleci.io/repos/189837919/shield?branch=master)](https://github.styleci.io/repos/189837919)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Neurony/laravel-redirects/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Neurony/laravel-redirects/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ApexMuse/laravel-redirects/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ApexMuse/laravel-redirects/?branch=master)
 
 - [Overview](#overview)   
 - [Installation](#installation)   
@@ -36,19 +36,19 @@ This package can be useful from an SEO perspective, when in your application, yo
 Install the package via Composer:
 
 ```
-composer require neurony/laravel-redirects
+composer require apexmuse/laravel-redirects
 ```
 
 Publish the config file with:
 
 ```
-php artisan vendor:publish --provider="Neurony\Redirects\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="ApexMuse\Redirects\ServiceProvider" --tag="config"
 ```
 
 Publish the migration file with:
 
 ```
-php artisan vendor:publish --provider="Neurony\Redirects\ServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="ApexMuse\Redirects\ServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the `redirects` table by running:
@@ -61,9 +61,9 @@ php artisan migrate
 
 ### Add the middleware
 
-In order for the redirecting functionality to actually happen, you need to add the `Neurony\Redirects\Middleware\RedirectRequests` middleware.
+In order for the redirecting functionality to actually happen, you need to add the `ApexMuse\Redirects\Middleware\RedirectRequests` middleware.
 
-Go to `App\Http\Kernel` and add the `Neurony\Redirects\Middleware\RedirectRequests` middleware in your `$middlewareGroups` groups of choice.
+Go to `App\Http\Kernel` and add the `ApexMuse\Redirects\Middleware\RedirectRequests` middleware in your `$middlewareGroups` groups of choice.
 
 ```php
 /**
@@ -74,14 +74,14 @@ Go to `App\Http\Kernel` and add the `Neurony\Redirects\Middleware\RedirectReques
 protected $middlewareGroups = [
     'web' => [
         ...
-        \Neurony\Redirects\Middleware\RedirectRequests::class,
+        \ApexMuse\Redirects\Middleware\RedirectRequests::class,
 ```
 
 ### Creating redirects
 
-You should never use the `Neurony\Redirects\Models\Redirect` directly, as this is the default concrete implementation for the `Neurony\Redirects\Contracts\RedirectModelContract`.   
+You should never use the `ApexMuse\Redirects\Models\Redirect` directly, as this is the default concrete implementation for the `ApexMuse\Redirects\Contracts\RedirectModelContract`.   
   
-Using the `Neurony\Redirects\Models\Redirect` model class directly will prevent you from being able to extend the model's capabilities.
+Using the `ApexMuse\Redirects\Models\Redirect` model class directly will prevent you from being able to extend the model's capabilities.
 
 You can create redirects that will be stored inside the `redirects` table like this:   
 
@@ -93,7 +93,7 @@ app('redirect.model')->create([
 ]);
 ```
 
-To see how you can extend the `Neurony\Redirects\Models\Redirect` model's capabilities, please read the comments from `/config/redirects.php -> redirect_model`
+To see how you can extend the `ApexMuse\Redirects\Models\Redirect` model's capabilities, please read the comments from `/config/redirects.php -> redirect_model`
 
 # Credits
 
