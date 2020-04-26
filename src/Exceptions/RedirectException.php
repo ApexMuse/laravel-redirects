@@ -1,6 +1,6 @@
 <?php
 
-namespace Neurony\Redirects\Exceptions;
+namespace ApexMuse\Redirects\Exceptions;
 
 use Exception;
 

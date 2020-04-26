@@ -1,6 +1,6 @@
 <?php
 
-namespace Neurony\Redirects\Middleware;
+namespace ApexMuse\Redirects\Middleware;
 
 use Closure;
 

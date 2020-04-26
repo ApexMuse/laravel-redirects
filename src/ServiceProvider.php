@@ -1,15 +1,15 @@
 <?php
 
-namespace Neurony\Redirects;
+namespace ApexMuse\Redirects;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use Neurony\Redirects\Contracts\RedirectModelContract;
-use Neurony\Redirects\Middleware\RedirectRequests;
-use Neurony\Redirects\Models\Redirect;
+use ApexMuse\Redirects\Contracts\RedirectModelContract;
+use ApexMuse\Redirects\Middleware\RedirectRequests;
+use ApexMuse\Redirects\Models\Redirect;
 
 class ServiceProvider extends BaseServiceProvider
 {

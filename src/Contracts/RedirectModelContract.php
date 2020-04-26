@@ -1,6 +1,8 @@
 <?php
 
-namespace Neurony\Redirects\Contracts;
+namespace ApexMuse\Redirects\Contracts;
+
+use Illuminate\Database\Eloquent\Builder;
 
 interface RedirectModelContract
 {
@@ -15,14 +17,14 @@ interface RedirectModelContract
     public function setNewUrlAttribute($value);
 
     /**
-     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param Builder $query
      * @param string $url
      * @return mixed
      */
     public function scopeWhereOldUrl($query, string $url);
 
     /**
-     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param Builder $query
      * @param string $url
      * @return mixed
      */
