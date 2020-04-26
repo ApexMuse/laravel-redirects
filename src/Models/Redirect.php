@@ -4,8 +4,8 @@ namespace ApexMuse\Redirects\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Neurony\Redirects\Contracts\RedirectModelContract;
-use Neurony\Redirects\Exceptions\RedirectException;
+use ApexMuse\Redirects\Contracts\RedirectModelContract;
+use ApexMuse\Redirects\Exceptions\RedirectException;
 
 class Redirect extends Model implements RedirectModelContract
 {
