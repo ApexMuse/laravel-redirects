@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-redirects` will be documented in this file 
 
+## 2.1.0 2020/23/9
+
+- Support for Laravel 8
 
 ## 2.0.1 2020/26/4
 
